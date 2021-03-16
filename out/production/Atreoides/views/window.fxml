@@ -1,0 +1,37 @@
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+<GridPane fx:controller="views.View"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="TOP_LEFT"
+          hgap="0"
+          vgap="0">
+
+    <HBox prefWidth="1200">
+
+        <VBox prefWidth="400" spacing="10">
+            <padding><Insets right="5" top="5" left="5"/></padding>
+            <Button fx:id="runButton" text="Start"></Button>
+            <Button fx:id="stepButton" text="Step"></Button>
+            <HBox spacing="5">
+                <Label text="time step = "></Label>
+                <TextField fx:id="timeStepField" text="1"></TextField>
+                <Label text="s."></Label>
+            </HBox>
+            <Label text="Inspection"/>
+            <!--<Label fx:id="spaceshipPositionLabel" text="Position du vaisseau :"/>-->
+            <!--<Label fx:id="spaceshipVelocityLabel" text="Vitesse du vaisseau :"/>-->
+
+            <TreeView fx:id="treeView" prefHeight="650"/>
+        </VBox>
+
+        <Canvas fx:id="canvas"></Canvas>
+    </HBox>
+
+</GridPane>

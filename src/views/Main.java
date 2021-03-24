@@ -1,4 +1,3 @@
-//Akhmadou Ndiaye's TP
 package views;
 
 import viewModel.ViewModel;
